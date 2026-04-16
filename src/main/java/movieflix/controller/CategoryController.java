@@ -6,6 +6,7 @@ import movieflix.service.CategoryService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 @RequestMapping("/movieflix/category")
@@ -24,5 +25,11 @@ public class CategoryController {
         return categoryService.saveCategory(category);
     }
 
-
+    @GetMapping("/{id}")
+    public Category getByCategoryId(@PathVariable Long id){
+        Optional<Category> optCategory = categoryService.findById(id);
+        if (optCategory.isPresent()){
+            return optCategory.get();
+        }return  null;
+    }
 }
