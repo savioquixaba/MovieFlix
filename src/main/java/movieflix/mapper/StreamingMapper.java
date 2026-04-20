@@ -12,7 +12,7 @@ public class StreamingMapper {
                 .name(streamingRequest.name())
                 .build();
     }
-    public static StreamingResponse toCategoryResponse(Streaming streaming){
+    public static StreamingResponse toStreamingResponse(Streaming streaming){
         return StreamingResponse.builder()
                 .id(streaming.getId())
                 .name(streaming.getName())
