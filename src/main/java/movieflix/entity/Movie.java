@@ -30,10 +30,10 @@ public class Movie {
     @Column(name = "release_date")
     private LocalDate releaseDate;
 
-    private Double rating;
+    private double rating;
 
     @CreationTimestamp
-    @Column(name = "cretead_at")
+    @Column(name = "created_at")
     private LocalDateTime createdAt;
 
     @UpdateTimestamp
