@@ -1,3 +1,3 @@
 Projeto feito para simular um Streaming de Filmes ficticio
 
-com foco em praticas a parte do Spring Security.
+Focado em praticar a parte do Spring Security.
